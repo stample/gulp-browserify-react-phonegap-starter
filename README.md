@@ -42,18 +42,18 @@ cordova platform add android
 ripple emulate
 ```
 
-- Launch Native android emulator:
+- Launch Native Android emulator:
 
-Install AVD's with the `android` command (GUI) 
+Install Ant, `ant` command should be available. On Ubuntu: `sudo apt-get install ant`
+
+Install AVD's with the `android` command (GUI)
+
 Launch them with `cordova emulate android` 
 
 
 --------------------------------------------------------------------------
 
---------------------------------------------------------------------------
-
-
-# OLD !!!
+# OLD README!
 --------------------------------------------------------------------------
 
 
