@@ -2,6 +2,10 @@
     "name": "stample-phonegap",
     "version": "0.0.1",
     "description": "The stample phonegap hybrid app, using Gulp, Browserify and React",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:stample/gulp-browserify-react-phonegap-starter.git"
+    },
     "keywords": [
         "stample",
         "phonegap",
