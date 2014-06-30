@@ -3,7 +3,59 @@ stample-Phonegap
 
 # Versions
 
-The cordova version used was `3.4.1-0.1.0`
+- Cordova: `3.4.1-0.1.0`
+- Gulp: `3.6.2`
+- Phonegap: `3.5.0-0.20.4`
+- Ripple: `0.9.22`
+
+# Install the tools
+
+- Install NPM, `npm` command should be available `sudo apt-get install npm`
+
+- Install required NPM dependencies:
+```
+npm install -g gulp@3.6.2
+npm install -g cordova@3.4.1-0.1.0
+npm install -g phonegap@3.5.0-0.20.4
+npm install -g ripple-emulator@0.9.22
+```
+
+- Install local NPM dependencies: `npm install`
+
+- Install Android SDK, `android` command should be available:
+Download android SDK: `http://developer.android.com/sdk/index.html?hl=sk`
+
+Update your bashrc:
+```
+export ANDROID_HOME=<YOUR_PATH>/adt-bundle-linux-x86_64-20140321/sdk
+export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+```
+
+- Install the Android platform to the project:
+```
+cordova platform add android
+```
+
+- Launch Ripple Emulator
+
+```
+ripple emulate
+```
+
+- Launch Native android emulator:
+
+Install AVD's with the `android` command (GUI) 
+Launch them with `cordova emulate android` 
+
+
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+
+
+# OLD !!!
+--------------------------------------------------------------------------
+
 
 # Infos
 
