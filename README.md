@@ -17,6 +17,9 @@ At build time:
 - Process CSS with Recess and Less
 - Assemble JS file with Browserify
 
+This creates a simple Gulp config that will build a simple app using Browserify and 2 React components. Here's a picture of it using Ripple emulator:
+
+![Picture](http://sebastien.lorber.free.fr/phonegap-react.png)
 
 Only the very minimal files required are added to Git. The Cordova `www` folder for exemples is ignored and is only the result of a local build. During development, you only modify files in the `src` folder.
 
