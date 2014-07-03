@@ -60,13 +60,30 @@ export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 cordova platform add android
 ```
 
+
+- If you want to use iOS: I can't help you, I don't have OSX but I guess installing the iOS SDK + `cordova platform add ios` should be fine.
+
+
+# START
+
+- Build the project
+
+```
+gulp
+```
+
+This will create the appropriate Phonegap content in `www` based on your source files.
+
 - Launch Ripple Emulator
 
 ```
 ripple emulate
 ```
 
-- Launch Native Android emulator:
+Notice that if you want to do Ajax requests with Chrome, you have to [disable the CORS securities in chrome](http://stackoverflow.com/questions/3102819/disable-same-origin-policy-in-chrome) and also disable the Cross Domain Proxy on Ripple settings.
+
+
+- Launch Native Android emulator (if you don't like Ripple):
 
 Install Ant, `ant` command should be available. On Ubuntu: `sudo apt-get install ant`
 
@@ -74,6 +91,27 @@ Install AVD's with the `android` command (GUI)
 
 Launch them with `cordova emulate android` 
 
+# FAQ
+
+- My Ajax requests never work in Ripple!
+
+Notice that if you want to do Ajax requests with Chrome in Ripple, you have to [disable the CORS securities in chrome](http://stackoverflow.com/questions/3102819/disable-same-origin-policy-in-chrome) and also disable the Cross Domain Proxy on Ripple settings.
+
+- I started Ripple and it says `Cannot GET /`
+
+This happens because you didn't use the `cordova platform add android` command. Ripple needs the `platform` folder to be populated with some content, which is what this command do.
+
+- I installed iOS SDK and tried to launch Ripple but get an error `Error: static() root path required` in the console
+
+This is probably because Ripple is launched by default with an Android device selected. 
+You can't use an Android device in Ripple unless you install the Android platform. But you can select an iOS device in Ripple and it should work this time.
+
+
+# More infos
+
+Some useful links to read:
+
+- [Ripple is rebord](http://www.raymondcamden.com/index.cfm/2013/11/5/Ripple-is-Reborn)
 
 # TODO
 
