@@ -51,6 +51,7 @@ npm install -g ripple-emulator@0.9.22
 
 - Install Android SDK, `android` command should be available:
 Download android SDK: `http://developer.android.com/sdk/index.html?hl=sk`
+Note that the phonegap versions above work fine with SDK 19 but it seems to have problems with version 20.
 
 Update your bashrc:
 ```
@@ -62,6 +63,8 @@ export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 ```
 cordova platform add android
 ```
+If you have troubles doing so, it may be because you did not install the Android SDK (19) or Git did not create the `platforms`, `.cordova` or `plugins` folder.
+Also, you should run `gulp` at least once or create the phonegap `www` folder manually.
 
 
 - If you want to use iOS: I can't help you, I don't have OSX but I guess installing the iOS SDK + `cordova platform add ios` should be fine.
@@ -114,7 +117,7 @@ You can't use an Android device in Ripple unless you install the Android platfor
 
 Some useful links to read:
 
-- [Ripple is rebord](http://www.raymondcamden.com/index.cfm/2013/11/5/Ripple-is-Reborn)
+- [Ripple is reborn](http://www.raymondcamden.com/index.cfm/2013/11/5/Ripple-is-Reborn)
 
 # TODO
 
